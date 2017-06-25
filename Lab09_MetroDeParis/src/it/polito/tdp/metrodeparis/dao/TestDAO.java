@@ -13,6 +13,11 @@ public class TestDAO {
 		System.out.println("Lista fermate");
 		List<Fermata> fermate = metroDAO.getAllFermate();
 		System.out.println(fermate);
+		
+		
+		
+		
+		
 	}
 
 }

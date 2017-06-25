@@ -7,11 +7,17 @@ public class Fermata {
 	private int idFermata;
 	private String nome;
 	private LatLng coords;
+	private int linea;
 
-	public Fermata(int idFermata, String nome, LatLng coords) {
+	public Fermata(int idFermata, String nome, LatLng coords, int linea) {
 		this.idFermata = idFermata;
 		this.nome = nome;
 		this.coords = coords;
+		this.linea=linea;
+	}
+	
+	public int getLinea() {
+		return linea;
 	}
 	
 	public Fermata(int idFermata) {
@@ -63,6 +69,6 @@ public class Fermata {
 	
 	@Override
 	public String toString() {
-		return nome;
+		return nome+" "+idFermata;
 	}
 }
